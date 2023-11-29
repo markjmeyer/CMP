@@ -1,4 +1,4 @@
-# doublyRanked
+# CMP
  Code to generate posteriors from Conway-Maxwell Poisson (CMP) distributions with non- and weakly-informative priors is in the file nicompr.R in the Code folder. A description of the method is available on arXiv, [Meyer, Graye, and Sellers (2023)](). Descriptions for some of the key functions are below. The remaining folders contain code and data for the simulations and illustrations, additional details are below and in the manuscript.
 
 ## Functions
