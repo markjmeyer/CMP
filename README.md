@@ -2,7 +2,7 @@
  Code to generate posteriors from Conway-Maxwell Poisson (CMP) distributions with non- and weakly-informative priors is in the file nicompr.R in the Code folder. A description of the method is available on arXiv, [Meyer, Graye, and Sellers (2023)](https://arxiv.org/abs/2311.18053). Descriptions for some of the key functions are below. The remaining folders contain code and data for the simulations and illustrations, additional details are below and in the manuscript.
 
 ## Functions
-The primary function in the file nicompr.R is cmp().
+The code is in the Code folder, file titled nicompr.R (for Non-Informative COM-Poisson R). The primary function in this file is cmp() which we describe below. Additional supporting functions include WAIC() to extract the Watanabe-Akaike Information Criterion, loo() to extract the leave-one-out cross validation criterion, coef() to extract posterior medians, and summary() to print a summary table. These additional functions take a cmp object that is created by the cmp() function.
 
  ### CMP model
  Fit CMP models with non- and weakly-informative priors
