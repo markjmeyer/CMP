@@ -17,4 +17,4 @@ Takes a vector $X$ containing count data. Defaults to the best performing weakly
 This folder contains files that were used to conduct the simulation study described by [Meyer, Graye, and Sellers (2023)](https://arxiv.org/abs/2311.18053).
 
 ## Illustrations folder
-This folder contains a script and datasets to analyze several datasets that exhibit both under and over dispersion including the horseshoe crab dataset, the textile dataset, and Hungarian and Slovak word datasets. See [Meyer, Graye, and Sellers (2023)](https://arxiv.org/abs/2311.18053) for details.
+This folder contains a script (Illustrations.R) and datasets to analyze several datasets that exhibit both under and over dispersion including the horseshoe crab dataset (provide as .txt), the textile dataset (provide as .txt), and Hungarian and Slovak word datasets (hard-coded in Illustrations.R). See [Meyer, Graye, and Sellers (2023)](https://arxiv.org/abs/2311.18053) for details.
