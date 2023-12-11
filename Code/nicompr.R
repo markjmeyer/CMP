@@ -57,10 +57,10 @@ Z   <- function(lambda, nu, J){
 }
 
 cmp   <- function(X, priors = list(a = 0, b = 0, c = 0), 
-                  type = c('flat', 'conjugate', 'Jeffreys'), 
+                  type = c('conjugate', 'flat', 'Jeffreys'), 
                   chains = 4, iter = 2000, ...){
   if(length(type) > 1){
-    type <- 'flat'
+    type <- 'conjugate'
   }
   
   if(type != 'flat' & type != 'conjugate' & type != 'Jeffreys'){
@@ -71,13 +71,18 @@ cmp   <- function(X, priors = list(a = 0, b = 0, c = 0),
     warning('conjugate prior requires selection of hyper-parameters, defaults to flat prior when arugment priors is exlcuded')
   }
   
-  if(is.null(priors)){
+  if(type == 'flat'){
     a <- b <- c <- 0
   } else{
-    a <- priors$a
-    b <- priors$b
-    c <- priors$c
+    if(is.null(priors)){
+      a <- b <- c <- 1
+    } else{
+      a <- priors$a
+      b <- priors$b
+      c <- priors$c
+    }
   }
+  
   
   if(type == 'conjugate'){
     checkPriors <- paramCheck(a, b, c)
